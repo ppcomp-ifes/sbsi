@@ -24,7 +24,7 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/assets/terceira-ponte-a-noite-vista-do-morro-do-moreno-no-municipio-de-vila-velha_433165-726.avif');
+    background-image: url('assets/terceira-ponte-a-noite-vista-do-morro-do-moreno-no-municipio-de-vila-velha_433165-726.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
