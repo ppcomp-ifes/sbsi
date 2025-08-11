@@ -86,6 +86,11 @@ header {
     width: 100vw;
 }
 
+#minicursos {
+    background-color: rgb(238, 247, 252);
+    width: 100vw;
+}
+
 #localizacao {
     background-color: var(--bg-light);
     display: flex;
