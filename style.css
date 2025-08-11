@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+:root {
+    --primary-color: #2980e3;
+    --secondary-color: #f39ac2;
+    --dark-blue: #0b1c2c;
+    --bg-light: #f9f9f9;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/terceira-ponte-a-noite-vista-do-morro-do-moreno-no-municipio-de-vila-velha_433165-726.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.navbar .nav-link {
+    color: var(--primary-color) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.logo {
+    height: 50px;
+}
+
+.hero h1,
+.hero p {
+    color: white;
+}
+
+.btn-highlight {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-highlight:hover {
+    background-color: #e384ae;
+}
+
+.hero {
+    padding: 4rem 1rem;
+    height: 100dvh;
+    padding: 10%;
+}
+
+.hero img {
+    width: 400px;
+    margin-bottom: 1rem;
+}
+
+#sobre, #inscricoes, #chamadas, #programacao {
+    background-color: whitesmoke;
+    width: 100vw;
+}
+
+#localizacao {
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#FAQ {
+    background-color: var(--secondary-color);
+    padding: 2rem 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: none;
+    background-color: #f39ac26c;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#scrollTopBtn:hover {
+    background-color: #e384ae;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='pink' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero img {
+        margin-top: 60px;
+    }
+}
