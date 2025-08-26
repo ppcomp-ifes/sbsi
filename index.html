@@ -8,28 +8,12 @@
     <link rel="icon" href="https://www.sbc.org.br/wp-content/uploads/2024/06/LOGO_SBC.png" sizes="32x32">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container-fluid">
-                <img src="assets/logo-sbsi-2026-removebg-preview.png" alt="Logo SBSI 2026" class="logo me-3">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-links">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#chamadas">Chamadas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#programacao">Programação</a></li>
-                    </ul>
-                    <a class="btn btn-highlight" href="index.html#inscricoes">Inscrições</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header class="container"></header>
+    <script>setResource('navbar.html', 'header')</script>
 
     <section class="container hero text-center">
         <img src="assets/logo-sbsi-2026-removebg-preview.png" alt="Logo SBSI 2026">
@@ -53,86 +37,8 @@ Sendo assim, a incorporação dos SI nas organizações demanda pesquisas voltad
         </div>
     </section>
 
-    <section id="chamadas" class="py-5">
-        <div class="container">
-            <h2 class="mb-3">Chamadas</h2>
-            
-             <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card h-100 text-center p-3">
-          <img src="assets/pesquisa_preto.png" class="card-img-top mx-auto d-block" alt="Pesquisa em SI" style="width: 160px; height: 240px;">
-          <div class="card-body">
-            <h5 class="card-title">Pesquisa em SI</h5>
-            <p class="text-danger">Registro do Artigo: 08/09/2025</p>
-            <a href="chamada_pesquisa.html" class="btn btn-primary">VER INFORMAÇÕES</a>
-          </div>
-        </div>
-      </div>
-
-  <!-- Card 2 -->
-      <div class="col">
-        <div class="card h-100 text-center p-3">
-          <img src="assets/industria.png" class="card-img-top mx-auto d-block" alt="Indústria e Inovação" style="width: 200px; height: 240px;">
-          <div class="card-body">
-            <h5 class="card-title">Indústria e Inovação</h5>
-            <!-- <p class="text-danger">Registro do Artigo: 08/09/2025</p> -->
-            <a href="#" class="btn btn-primary">VER INFORMAÇÕES</a>
-          </div>
-        </div>
-      </div>
-
-        <!-- Card 3 -->
-      <div class="col">
-        <div class="card h-100 text-center p-3">
-          <img src="assets/minicursos.png" class="card-img-top mx-auto d-block" alt="Minicursos em SI" style="width: 180px; height: 240px;">
-          <div class="card-body">
-            <h5 class="card-title">Minicursos em SI</h5>
-         <p class="text-danger">Registro do Mini-curso: 08/09/2025</p>
-            <a href="chamada_minicursos.html" class="btn btn-primary">VER INFORMAÇÕES</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col">
-        <div class="card h-100 text-center p-3">
-          <img src="assets/teses.png" class="card-img-top mx-auto d-block" alt="Concurso de Teses" style="width: 200px; height: 240px;">
-          <div class="card-body">
-            <h5 class="card-title">Concurso de Teses, Dissertações e TCCs em SI</h5>
-          <!-- <p class="text-danger">Registro do Artigo: 08/09/2025</p> -->
-            <a href="#" class="btn btn-primary">VER INFORMAÇÕES</a>
-          </div>
-        </div>
-      </div>
-
-       <!-- Card 5 -->
-      <div class="col">
-        <div class="card h-100 text-center p-3">
-          <img src="assets/emergentes.png" class="card-img-top mx-auto d-block" alt="Temas emergentes" style="width: 180px; height: 240px;">
-          <div class="card-body">
-            <h5 class="card-title">Temas, ideias e resultados emergentes em SI</h5>
-            <!-- <p class="text-danger">Registro do Artigo: 08/09/2025</p> -->
-            <a href="#" class="btn btn-primary">VER INFORMAÇÕES</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="col">
-        <div class="card h-100 text-center p-3">
-          <img src="assets/desafios.png" class="card-img-top mx-auto d-block" alt="Grandes Desafios" style="width: 180px; height: 240px;">
-          <div class="card-body">
-            <h5 class="card-title">Grandes Desafios em Sistemas de Informação no Brasil</h5>
-         <!-- <p class="text-danger">Registro do Artigo: 08/09/2025</p> -->
-            <a href="#" class="btn btn-primary">VER INFORMAÇÕES</a>
-          </div>
-        </div>
-      </div>
-
-        </div>
-    </section>
+    <section id="chamadas"></section>
+    <script>setResource('chamadas.html', '#chamadas')</script>
 
 
     <section id="programacao" class="py-5">
@@ -162,87 +68,11 @@ Sendo assim, a incorporação dos SI nas organizações demanda pesquisas voltad
         </div>
     </section>
 
-    <!-- <section id="FAQ">
-        <h2 class="mb-3 d-flex justify-content-center align-items-center flex-column">FAQ</h2>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Pergunta #1
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Resposta para a pergunta #1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Pergunta #2
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Resposta para a pergunta #2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Pergunta #3
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Resposta para a pergunta #3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    <!-- <section id="FAQ"></section>
+    <script>setResource('faq.html', '#FAQ')</script> -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <h5>Ficou com alguma dúvida?</h5>
-                    <p>Envie um e-mail para <a href=mailto:sbsi2026.vix@gmail.com>sbsi2026.vix@gmail.com</a></p>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5>Mapa do site</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#chamadas">Chamadas</a></li>
-                        <li><a href="#programacao">Programação</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5>Acompanhe o SBSI</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center pt-3">
-                <img src="assets/logo_semfundo.png" alt="Logo SBSI" width="100">
-                <p class="mt-2">&copy; SBSI 2026 - Instituto Federal do Espírito Santo</p>
-            </div>
-        </div>
-    </footer>
+    <footer></footer>
+    <script>setResource('footer.html', 'footer')</script>
 
     <button id="scrollTopBtn" title="Voltar ao topo">&#8679;</button>
 
